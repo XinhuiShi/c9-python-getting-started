@@ -11,11 +11,11 @@ import json
 
 # You need to update the SUBSCRIPTION_KEY to 
 # they key for your Computer Vision Service
-SUBSCRIPTION_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+SUBSCRIPTION_KEY = "b4dd6310543241fc80a4652edc2f1ad3"
 
 # You need to update the vision_service_address to the address of
 # your Computer Vision Service
-vision_service_address = "https://canadacentral.api.cognitive.microsoft.com/vision/v2.0/"
+vision_service_address = "https://pythonimageanalysis.cognitiveservices.azure.com/"
 
 # Add the name of the function you want to call to the address
 address = vision_service_address + "analyze"
