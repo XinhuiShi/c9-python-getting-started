@@ -9,8 +9,15 @@ import requests
 # by the web service
 import json
 
+# Getting key from local file
+from dotenv import load_dotenv
+load_dotenv()
+import os
+sub_key = os.getenv('SUBSCRIPTION_KEY')
+vision_address = os.getenv('VISION_SERVICE_ADDRESS')
+
 # We need the address of our Computer vision service
-vision_service_address = "https://canadacentral.api.cognitive.microsoft.com/vision/v2.0/"
+vision_service_address = vision_address
 # Add the name of the function we want to call to the address
 address = vision_service_address + "analyze"
 
@@ -20,7 +27,7 @@ parameters  = {'visualFeatures':'Description,Color',
                'language':'en'}
 
 # We need the key to access our Computer Vision Service
-subscription_key = "xxxxxxxxxxxxxxxxxxxxxxx"
+subscription_key = sub_key
 
 # Open the image file to get a file object containing the image to analyze
 image_path = "./TestImages/PolarBear.jpg"

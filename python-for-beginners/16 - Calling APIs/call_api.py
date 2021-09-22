@@ -9,13 +9,20 @@ import requests
 # by the web service
 import json
 
+# Getting key from local file
+from dotenv import load_dotenv
+load_dotenv()
+import os
+sub_key = os.getenv('SUBSCRIPTION_KEY')
+vision_address = os.getenv('VISION_SERVICE_ADDRESS')
+
 # You need to update the SUBSCRIPTION_KEY to 
 # they key for your Computer Vision Service
-SUBSCRIPTION_KEY = "b4dd6310543241fc80a4652edc2f1ad3"
+SUBSCRIPTION_KEY = sub_key
 
 # You need to update the vision_service_address to the address of
 # your Computer Vision Service
-vision_service_address = "https://pythonimageanalysis.cognitiveservices.azure.com/"
+vision_service_address = vision_address
 
 # Add the name of the function you want to call to the address
 address = vision_service_address + "analyze"

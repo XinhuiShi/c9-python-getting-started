@@ -10,7 +10,7 @@ import requests
 import json
 
 # We need the address of our Computer vision service
-vision_service_address = "https://canadacentral.api.cognitive.microsoft.com/vision/v2.0/"
+vision_service_address = "https://pythonimageanalysis.cognitiveservices.azure.com/vision/v2.1/"
 # Add the name of the function we want to call to the address
 address = vision_service_address + "analyze"
 
@@ -20,7 +20,7 @@ parameters  = {'visualFeatures':'Description,Color',
                'language':'en'}
 
 # We need the key to access our Computer Vision Service
-subscription_key = "cf229a23c3054905b5a8ad512edfa9dd"
+subscription_key = "b4dd6310543241fc80a4652edc2f1ad3"
 
 # Open the image file to get a file object containing the image to analyze
 image_path = "./TestImages/PolarBear.jpg"
