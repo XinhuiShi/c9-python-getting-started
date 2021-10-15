@@ -1,3 +1,5 @@
+
+# Type hints
 def print_hello(name: str) -> str:
     """
     Greets the user by name
@@ -8,3 +10,6 @@ def print_hello(name: str) -> str:
 		str: The greeting
 	"""
 	print('Hello, ' + name)
+def test_hello(name):
+	print('Hello' + name)
+print_hello

@@ -1,3 +1,4 @@
+# Will only run in Python 3.7 or higher
 from timeit import default_timer
 import aiohttp
 import asyncio

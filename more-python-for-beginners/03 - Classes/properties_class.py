@@ -1,6 +1,7 @@
 class Presenter():
 	def __init__(self, name):
 		# Constructor
+		print('tHIS RAN...')
 		self.name = name
 
 	@property

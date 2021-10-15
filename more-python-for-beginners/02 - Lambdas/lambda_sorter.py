@@ -4,11 +4,19 @@ presenters = [
     {'name': 'Christopher', 'age': 47}
 ]
 
-presenters.sort(key=lambda item: item['name'])
-print('-- alphabetically --')
-print(presenters)
+# presenters.sort(key=lambda item: item['name'])
+# print('-- alphabetically --')
+# print(presenters)
 
-# Sort by length of name (shortest to longest)
-presenters.sort(key=lambda item: len(item['name']))
-print('-- length --')
+# # Sort by length of name (shortest to longest)
+# presenters.sort(key=lambda item: len(item['name']))
+# print('-- length --')
+# print(presenters)
+
+
+
+def sorter(item):
+    return item['name']
+
+presenters.sort(key=sorter)
 print(presenters)
